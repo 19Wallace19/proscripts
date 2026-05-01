@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proscripts — Professional Sales & Business Systems</title>
+  <meta name="description" content="Field-tested PDF systems for sales professionals and tradespeople. Instant download." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0a0a0f;
+      --surface:  #13131a;
+      --border:   #1e1e2e;
+      --text:     #f0eeea;
+      --muted:    #888899;
+      --gold:     #c4a84f;
+      --gold-dim: #8a7435;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      min-height: 100vh;
+      padding: 0 16px 80px;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 64px 0 48px;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: var(--text);
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 15px;
+      color: var(--muted);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: var(--gold);
+      margin: 24px auto 0;
+    }
+
+    /* ── Grid ── */
+    .grid {
+      max-width: 520px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--gold-dim);
+      transform: translateY(-2px);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .card-pill {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .card-name {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.2;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .card-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .stat {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+    }
+
+    .price {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--gold);
+      letter-spacing: -1px;
+    }
+
+    .price-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #000;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.15s, transform 0.15s;
+    }
+
+    .btn:hover {
+      background: #d4b860;
+      transform: scale(1.02);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    footer a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Pro<span>scripts</span></div>
+    <p class="tagline">Field-tested systems for closers & tradespeople</p>
+    <div class="divider"></div>
+  </header>
+
+  <div class="grid">
+
+    <!-- The Trades Closer -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">The Trades Closer</div>
+        <div class="card-pill" style="background:#3a1208; color:#F39C12;">Trades</div>
+      </div>
+      <p class="card-desc">8 guides for tradespeople going out on their own. Pricing, customers, operations, finance, and the owner mindset.</p>
+      <div class="card-stats">
+        <span class="stat">8 Guides</span>
+        <span class="stat">$95K Avg Year 1</span>
+        <span class="stat">30 Days to First 10 Customers</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$97</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/nuohn" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- The Solar Closer -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">The Solar Closer</div>
+        <div class="card-pill" style="background:#0e2015; color:#C4A84F;">D2D Solar</div>
+      </div>
+      <p class="card-desc">19 guides across 4 skill tiers. A complete D2D solar sales system from cold doors to consistent closes.</p>
+      <div class="card-stats">
+        <span class="stat">19 Guides</span>
+        <span class="stat">4 Skill Tiers</span>
+        <span class="stat">90-Day System</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$97</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/vvaxrp" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- The Roofing Closer -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">The Roofing Closer</div>
+        <div class="card-pill" style="background:#0d1a28; color:#D97B3A;">D2D Roofing</div>
+      </div>
+      <p class="card-desc">3 field-tested guides for storm-damage D2D. The 2-stage close, insurance bridge script, and follow-up pipeline.</p>
+      <div class="card-stats">
+        <span class="stat">3 Guides</span>
+        <span class="stat">2-Stage Close</span>
+        <span class="stat">Insurance Bridge Script</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$97</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/amfbp" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- The Real Estate Closer -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">The Real Estate Closer</div>
+        <div class="card-pill" style="background:#1a1230; color:#C4956A;">Real Estate</div>
+      </div>
+      <p class="card-desc">8 guides for agents who want more listings without more ad spend. From listing appointments to referral engines.</p>
+      <div class="card-stats">
+        <span class="stat">8 Guides</span>
+        <span class="stat">3x Listing Conversion</span>
+        <span class="stat">$0 Extra Ad Spend</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$97</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/upjeqw" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- The Money Reset -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">The Money Reset</div>
+        <div class="card-pill" style="background:#0a1f14; color:#E8A838;">Personal Finance</div>
+      </div>
+      <p class="card-desc">7 plain-English guides. Budgeting, debt payoff, credit repair, and investing — no jargon, no fluff.</p>
+      <div class="card-stats">
+        <span class="stat">7 Guides</span>
+        <span class="stat">30-Day Action Plan</span>
+        <span class="stat">1 Year to Stability</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$47</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/bzzjuk" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- The Contractor Marketing Playbook -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">Contractor Marketing Playbook</div>
+        <div class="card-pill" style="background:#0d1f0e; color:#E07B2A;">Contractor Marketing</div>
+      </div>
+      <p class="card-desc">12 field-tested playbooks for residential contractors. Marketing, GBP, reviews, referrals, estimating, pricing, upsells, and crew management.</p>
+      <div class="card-stats">
+        <span class="stat">12 Guides</span>
+        <span class="stat">Estimating + Pricing System</span>
+        <span class="stat">90 Days to Full Pipeline</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$67</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/xbidy" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- Python Starter Kit -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">Python Starter Kit</div>
+        <div class="card-pill" style="background:#0d1f33; color:#FFD43B;">Python</div>
+      </div>
+      <p class="card-desc">6 beginner-friendly guides that take you from zero to writing real Python programs. Variables, lists, functions, control flow, and 4 complete projects.</p>
+      <div class="card-stats">
+        <span class="stat">6 Guides</span>
+        <span class="stat">No Experience Needed</span>
+        <span class="stat">4 Real Projects</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$37</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/alhnfh" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- Python Automation Pack -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">Python Automation Pack</div>
+        <div class="card-pill" style="background:#0d1f33; color:#FFD43B;">Python</div>
+      </div>
+      <p class="card-desc">6 hands-on automation guides. Automate files, emails, web scraping, Excel, scheduling, and 4 complete real-world projects you can use immediately.</p>
+      <div class="card-stats">
+        <span class="stat">6 Guides</span>
+        <span class="stat">4 Complete Projects</span>
+        <span class="stat">Hours Saved Per Week</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$37</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/iqfkad" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+    <!-- Python Intermediate Pack -->
+    <div class="card">
+      <div class="card-top">
+        <div class="card-name">Python Intermediate Pack</div>
+        <div class="card-pill" style="background:#0d1f33; color:#FFD43B;">Python</div>
+      </div>
+      <p class="card-desc">8 intermediate guides covering OOP, APIs, pandas, advanced web scraping, error handling, SQLite databases, CLI tools, and 3 complete portfolio projects.</p>
+      <div class="card-stats">
+        <span class="stat">8 Guides</span>
+        <span class="stat">3 Complete Projects</span>
+        <span class="stat">OOP · APIs · Databases</span>
+      </div>
+      <div class="card-footer">
+        <div>
+          <div class="price">$57</div>
+          <div class="price-note">Instant PDF Download</div>
+        </div>
+        <a class="btn" href="https://burrage5.gumroad.com/l/zwhtvt" target="_blank">Get It Now</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Proscripts · <a href="https://burrage5.gumroad.com" target="_blank">View all products on Gumroad</a></p>
+  </footer>
+
+</body>
+</html>
