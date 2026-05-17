@@ -1,0 +1,22 @@
+{
+  "sounds": [
+    { "name": "Original Sound - Creator", "plays": "2.4M" },
+    { "name": "Sped Up Remix", "plays": "1.8M" },
+    { "name": "Viral Beat Drop", "plays": "956K" },
+    { "name": "Nostalgic Throwback", "plays": "743K" },
+    { "name": "Drill Type Beat", "plays": "621K" }
+  ],
+  "hashtags": {
+    "trending": ["#fyp", "#foryou", "#viral", "#trending", "#foryoupage"],
+    "niche": ["#smallbusiness", "#entrepreneur", "#sidehustle", "#makemoneyonline"],
+    "engagement": ["#duet", "#stitch", "#greenscreen", "#transition"],
+    "seasonal": ["#summer2026", "#springvibes", "#holidayseason"]
+  },
+  "challenges": [
+    { "tag": "#TransitionChallenge", "growth": "+120%" },
+    { "tag": "#DayInMyLife", "growth": "+95%" },
+    { "tag": "#SmallBusinessCheck", "growth": "+70%" },
+    { "tag": "#GRWM", "growth": "+45%" }
+  ],
+  "lastUpdated": "2026-05-17"
+}
